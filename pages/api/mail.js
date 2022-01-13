@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 export default async function handler(req, res) {
   const { name, age, mail, tel } = req.body;
   const subject = 'Not a scam';
-  const from = 'From: Real Person <absender@jbeeler.ch>';
+  const from = 'From: Real Person <jonii-96@hotmail.com>';
   const text = `Guten Abend, Ich bin ${name} und ${age} Jahre alt. Wenn Sie mich kennenlernen wollen, können Sie mich gerne unter: ${tel} erreichen`;
 
   try {

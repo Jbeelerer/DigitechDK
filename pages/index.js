@@ -38,7 +38,7 @@ export default function Home() {
             className="alert alert-success"
             role="alert"
           >
-            Schau dir deine E-mails an!
+            Schau dir deine E-mails an! (ggfs. im Spamordner)
           </div>
           <br />
           <img src="/animation.gif" alt="success" width="50%" height="*" />
