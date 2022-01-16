@@ -11,7 +11,8 @@ export default function Home() {
 
     const formData = { name, age, mail, tel };
     try {
-      await fetch('/api/mail', {
+      //await fetch('/api/mail', {
+        await fetch('/mail', {
         method: 'POST',
         body: JSON.stringify(formData),
         headers: { 'Content-Type': 'application/json' },
