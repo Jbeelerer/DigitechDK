@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a004dd85-8a3b-458c-bd3d-adfd59b390b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/mail.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/mail.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/api/mail.js" afterPath="$PROJECT_DIR$/pages/api/mail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index.js" afterPath="$PROJECT_DIR$/pages/index.js" />
@@ -40,8 +40,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="132">
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -52,18 +52,8 @@
       <file leaf-file-name="mail.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/api/mail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/mail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="181">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -377,12 +367,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642076780531</updated>
-      <workItem from="1642076781874" duration="13079000" />
+      <workItem from="1642076781874" duration="13609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13079000" />
+    <option name="totallyTimeSpent" value="13609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="25" width="1440" height="822" extended-state="6" />
@@ -469,8 +459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="132">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -479,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/api/mail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="181">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>

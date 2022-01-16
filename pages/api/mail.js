@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     transporter.use('compile', hbs({
         viewEngine: 'express-handlebars',
-        viewPath: './views/'
+        viewPath: './../views/'
     }));
 
     const subject = 'Not a scam';
