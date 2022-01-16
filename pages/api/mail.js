@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+/**import nodemailer from 'nodemailer';
 
 const hbs = require('nodemailer-express-handlebars');
 
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     };
     const attachments = [{
         filename: 'logo.png',
-        path: './logo.png',
+        path: __directory+'./logo.png',
         cid: 'logo'
     }];
 
@@ -52,7 +52,7 @@ export default async function handler(req, res) {
         } catch (error) {
         res.status(400).json(error);
         }
-        }
+        }*/
 
 /**
 const nodemailer = require('nodemailer');
@@ -108,3 +108,42 @@ export default async function handler(req, res) {
 }
 
  */
+
+import nodemailer from 'nodemailer';
+
+const hbs = require('nodemailer-express-handlebars');
+
+const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASS,
+    },
+});
+
+
+export default async function handler(req, res) {
+    const {name, age, mail, tel} = req.body;
+    const subject = 'Not a scam';
+    const from = 'From: Real Person <NoScamForReal@gmail.com>';
+    const text = `Guten Abend, Ich bin ${name} und ${age} Jahre alt. Wenn Sie mich kennenlernen wollen, können Sie mich gerne unter: ${tel} erreichen`;
+    const html = " <h1>Hallo "+name+"</h1> <p>Ich bin deine freundliche Datenkrake. Besten Dank, dass du dich auch mit "+age+" Jahren noch bei unserem Datenverteildiens angemldet hast. Zusammen mit all den anderen Idio.... Freunden werden wir deine Daten zu einem Paket zusammenschnüren und an diverse dubiose Firmen weiterverkaufen. </p> <h1>IST DAS NICHT AUFREGEND?</h1> <p>Und es kommt noch besser. Um dich bei unserem Dienst abzumelden, darfst du eine Gebühr von CHF 250.- bezahlen. Wir werden dir ab sofort wöchentlich eine Erinnerungsnachricht direkt auf dein Smartphone unter "+tel+" mit unseren Kontoangaben senden. </p> <footer> <p id='contact'> DATENKRAKE AG <br /> SCAMSTRASSE 8 <br /> NURSEICHIMGRIND, CH <br /> passiert.natürlich@gar.nichts </p> </footer>";
+   /** const attachments = [{
+        filename: 'logo.png',
+        path: __directory+'./logo.png',
+        cid: 'logo'
+    }];*/
+   
+    try {
+        const message = await transporter.sendMail({
+            from,
+            to: mail,
+            subject,
+            html,
+           // attachments,
+        });
+        res.json(message);
+    } catch (error) {
+        res.status(400).json(error);
+    }
+}
