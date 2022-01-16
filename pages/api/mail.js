@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     transporter.use('compile', hbs({
         viewEngine: 'express-handlebars',
-        viewPath: './'
+        viewPath: './views'
     }));
 
     const subject = 'Not a scam';
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     };
     const attachments = [{
         filename: 'logo.png',
-        path: '/logo.png',
+        path: './logo.png',
         cid: 'logo'
     }];
 
